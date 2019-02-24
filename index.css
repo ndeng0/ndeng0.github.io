@@ -36,9 +36,23 @@
 }
 
 .about-me {
-  padding: 500px;
+  padding: 100px;
   text-align: center;
   background: gray;
+  color: white;
+}
+
+.skills {
+  padding: 200px;
+  text-align: center;
+  background: orange;
+  color: white;
+}
+
+.interests {
+  padding: 500px;
+  text-align: center;
+  background: blue;
   color: white;
 }
 
@@ -56,4 +70,12 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
 }
