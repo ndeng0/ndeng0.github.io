@@ -1,0 +1,59 @@
+/*Style the header */
+.header {
+  padding: 100px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/*Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a, .navbar a:visited{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  background-color: #333;
+}
+
+/* Right-align link */
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.about-me {
+  padding: 500px;
+  text-align: center;
+  background: gray;
+  color: white;
+}
+
+.contact {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.contact a:link, .contact a:visited{
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
