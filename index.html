@@ -17,52 +17,62 @@
 </style>
 
 <link rel="stylesheet" href="index.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index.js"></script>
 
 </head>
 
 <body>
-  <!-- Content will go here -->
+  <!-- Navigation bar -->
   <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#contacts" class="right">Contacts</a>
-    <a href="#skills" class="right">Skills</a>
-    <a href="#about-me" class="right">About</a>
+    <a href="#home-id" class="sliding-link">Home</a>
+    <a href="#contacts-id" class="right sliding-link">Contacts</a>
+    <a href="#interests-id" class="right sliding-link">Interests</a>
+    <a href="#skills-id" class="right sliding-link">Skills</a>
+    <a href="#about-me-id" class="right sliding-link">About</a>
   </div>
 
-  <div id="home" class="home">
+  <div id="home-id" class="home-css">
     <h1>My name is Norman. And that's it for now.</h1>
     <p>I am 50% Seawolf, 50% programmer, and 100% awesome.<p>
   </div>
 
-  <div id="about-me" class="about-me">
+  <div id="about-me-id" class="about-me-css">
     <h1>About Me</h1>
     <p>I'm an undergraduate student at Stony Brook University.</p>
     <p>I do whatever and wherever my interests takes me.</p>
   </div>
 
-  <div id="skills" class="skills">
+  <div id="skills-id" class="skills-css">
     <h1>Skills</h1>
     <p>These are the things I can do.</p>
-    <h2>Programming</h2>
-    <p>Java: Pretty Good</p>
-    <p>Python: Pretty Good</p>
-    <p>Javascript: Meh</p>
-    <p>HTML/CSS: Meh</p>
-    <h2>Libraries</h2>
-    <p>Processing: Pretty Good</p>
-    <p>P5.js: Meh</p>
-    <p>Numpy: Meh</p>
-    <h2>Game Engines</h2>
-    <p>Ren'Py: Ok</p>
-    <p>Blender: Meh</p>
+    <button id="programming-js" class="btn programming">Programming</button> </br>
+    <p id="programming-p-js">
+      Java: Pretty Good </br>
+      Python: Pretty Good </br>
+      Javascript: Meh </br>
+      HTML/CSS: Meh </br>
+    </p>
+    <button id="library-js" class="btn library">Libraries</button> </br>
+    <p id="library-p-js">
+      Processing: Pretty Good </br>
+      P5.js: Meh </br>
+      Numpy: Meh </br>
+      JQuery: Meh </br>
+    </p>
+    <button id="game-js" class="btn game">Game Engines</button> </br>
+    <p id="game-p-js">
+      Ren'Py: Ok </br>
+      Blender: Meh </br>
+    </p>
   </div>
 
-  <div id="interests" class="interests">
+  <div id="interests-id" class="interests-css">
     <h1>Interests</h1>
     <p>These are the things I like to do.<p>
   </div>
 
-  <div id="contacts" class="contact">
+  <div id="contacts-id" class="contact-css">
     <h1>Contact Information</h1>
     <a href="https://google.com" target="_blank">Email:</a>
     <a href="https://github.com/ndeng0" target="_blank">Github</a>
