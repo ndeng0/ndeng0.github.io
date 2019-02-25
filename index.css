@@ -29,7 +29,7 @@
 }
 
 /* Home section */
-.home {
+.home-css {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
@@ -38,7 +38,7 @@
 }
 
 /* About me section */
-.about-me {
+.about-me-css {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
@@ -47,25 +47,26 @@
 }
 
 /* Skills section */
-.skills {
+.skills-css {
   padding-top: 100px;
   padding-bottom: 100px;
-  text-align: center;
+  padding-left: 50px;
+  text-align: justify;
   background: orange;
   color: white;
 }
 
 /* Interests section */
-.interests {
+.interests-css {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  background: blue;
+  background: red;
   color: white;
 }
 
 /* Contacts section */
-.contact {
+.contact-css {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -73,7 +74,7 @@
   color: white;
 }
 
-.contact a:link, .contact a:visited{
+.contact-css a:link, .contact-css a:visited{
   background-color: black;
   color: white;
   padding: 15px 25px;
@@ -82,9 +83,51 @@
   display: inline-block;
 }
 
+/* Button */
+.btn {
+  border: none;
+  background-color: inherit;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 28px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.programming {
+  background-color: orange;
+  color: white;
+}
+
+.programming:hover {
+  background-color: green;
+  color: white;
+}
+
+.library {
+  background-color: orange;
+  color: white;
+}
+
+.library:hover {
+  background-color: green;
+  color: white;
+}
+
+.game {
+  background-color: orange;
+  color: white;
+}
+
+.game:hover {
+  background-color: green;
+  color: white;
+}
+
 /* Misc. */
 div {
-  width: 100vw;
+  width: $(window).height();
 }
 
 h1 {
