@@ -32,7 +32,7 @@
     <a href="#about-me-id" class="right sliding-link">About</a>
   </div>
 
-  <div id="home-id" class="home-css">
+  <div id="home-id" class="home-css" style="height: 100%;">
     <h1>My name is Norman. And that's it for now.</h1>
     <p>I am 50% Seawolf, 50% programmer, and 100% awesome.<p>
   </div>
@@ -43,40 +43,40 @@
     <p>I do whatever and wherever my interests takes me.</p>
   </div>
 
-  <div id="skills-id" class="skills-css">
-    <h1>Skills</h1>
-    <p>These are the things I can do.</p>
-    <button id="programming-js" class="btn programming">Programming</button> </br>
-    <p id="programming-p-js">
-      Java: Pretty Good </br>
-      Python: Pretty Good </br>
-      Javascript: Meh </br>
-      HTML/CSS: Meh </br>
-    </p>
-    <button id="library-js" class="btn library">Libraries</button> </br>
-    <p id="library-p-js">
-      Processing: Pretty Good </br>
-      P5.js: Meh </br>
-      Numpy: Meh </br>
-      JQuery: Meh </br>
-    </p>
-    <button id="game-js" class="btn game">Game Engines</button> </br>
-    <p id="game-p-js">
-      Ren'Py: Ok </br>
-      Blender: Meh </br>
-    </p>
+  <div id="skills-id" class="row">
+    <div class="side">
+      <div class=" skills-css">
+        <h1>Skills</h1>
+        <p>These are the things I can do.</p>
+      </div>
+    </div>
+    <div class="main">
+      <h2>Programming</h2>
+        <canvas id="p-canvas" width="700" height="400"> </canvas>
+      <h2>Libraries</h2>
+        <canvas id="l-canvas" width="700" height="400"> </canvas>
+      <h2>Game Engines</h2>
+      <p>
+        <canvas id="g-canvas" width="700" height="400"> </canvas>
+    </div>
   </div>
 
-  <div id="interests-id" class="interests-css">
+  <div id="interests-id" style="height:100%;" class="interests-css">
     <h1>Interests</h1>
     <p>These are the things I like to do.<p>
   </div>
 
   <div id="contacts-id" class="contact-css">
     <h1>Contact Information</h1>
-    <a href="https://google.com" target="_blank">Email:</a>
+    <a href="https://google.com" target="_blank">Email: hireme@please.com</a>
     <a href="https://github.com/ndeng0" target="_blank">Github</a>
   </div>
+
+  <script>
+    _programming();
+    _library();
+    _game();
+  </script>
 
 </body>
 </html>
