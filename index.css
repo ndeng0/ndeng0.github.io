@@ -28,6 +28,23 @@
   color: black;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: orange;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
 /* Home section */
 .home-css {
   padding-top: 100px;
@@ -48,11 +65,8 @@
 
 /* Skills section */
 .skills-css {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 50px;
-  text-align: justify;
-  background: orange;
+  padding: 100px;
+  text-align: center;
   color: white;
 }
 
@@ -136,4 +150,13 @@ h1 {
 
 p {
   font-size: 20px;
+}
+
+/* Splite Website */
+* {
+  box-sizing: border-box;
+}
+
+canvas {
+    border:1px solid white;
 }
