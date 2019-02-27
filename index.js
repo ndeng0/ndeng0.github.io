@@ -30,7 +30,7 @@ function _programming() {
   line(ctx, 600, 0, 600, 320);
 
   // Settings for categories text
-  ctx.font = "20px Ariel";
+  ctx.font = "20px Arial";
   ctx.fillStyle = "black";
   ctx.textAlign = "right";
 
@@ -41,7 +41,7 @@ function _programming() {
   ctx.fillText("HTML/CSS", 190, 280);
 
   // Levels
-  ctx.font = "15px Ariel"
+  ctx.font = "15px Arial"
   ctx.textAlign = "center";
   ctx.fillText("Nothing", 200, 340);
   ctx.fillText("Something", 300, 340);
@@ -74,7 +74,7 @@ function _library() {
   line(ctx, 600, 0, 600, 320);
 
   // Settings for categories text
-  ctx.font = "20px Ariel";
+  ctx.font = "20px Arial";
   ctx.fillStyle = "black";
   ctx.textAlign = "right";
 
@@ -85,7 +85,7 @@ function _library() {
   ctx.fillText("Jquery", 190, 280);
 
   // Levels
-  ctx.font = "15px Ariel"
+  ctx.font = "15px Arial"
   ctx.textAlign = "center";
   ctx.fillText("Nothing", 200, 340);
   ctx.fillText("Something", 300, 340);
@@ -118,7 +118,7 @@ function _game() {
   line(ctx, 600, 0, 600, 240);
 
   // Settings for categories text
-  ctx.font = "20px Ariel";
+  ctx.font = "20px Arial";
   ctx.fillStyle = "black";
   ctx.textAlign = "right";
 
@@ -128,7 +128,7 @@ function _game() {
   ctx.fillText("GameMaker Studio", 190, 200);
 
   // Levels
-  ctx.font = "15px Ariel"
+  ctx.font = "15px Arial"
   ctx.textAlign = "center";
   ctx.fillText("Nothing", 200, 260);
   ctx.fillText("Something", 300, 260);
@@ -146,6 +146,7 @@ function _game() {
 }
 
 function line(ctx, sx, sy, ex, ey) {
+  ctx.strokeStyle = "black";
   ctx.moveTo(sx, sy);
   ctx.lineTo(ex, ey);
   ctx.stroke();
