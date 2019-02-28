@@ -50,15 +50,15 @@
 .home-css {
   padding-top: 40vh;
   text-align: center;
-  background: #265077;
-  color: white;
+  background: #EFEFEF;
+  color: #A9A9A9;
 }
 
 /* About me section */
 .about-css {
   padding: 100px;
   text-align: center;
-  background: #022140;
+  background: #FF3B3F;
   color: white;
 }
 
@@ -66,7 +66,7 @@
 .skills-css {
   padding: 100px;
   text-align: center;
-  background: #494B68;
+  background: #A9A9A9;
   color: white;
 }
 
@@ -75,7 +75,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  background: #2D5F5D;
+  background: #FF3B3F;
   color: white;
 }
 
@@ -144,11 +144,12 @@
 }
 
 .c-left, .c-right {
-  width: 25%
+  background-color: white;
+  width: 12.5%
 }
 
 .middle {
-  width: 50%;
+  width: 75%;
 }
 
 .row:after {
