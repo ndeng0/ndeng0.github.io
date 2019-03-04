@@ -11,12 +11,14 @@
   html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
     height: 100%;
   }
 
 </style>
 
 <link rel="stylesheet" href="index.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="index.js"></script>
 
@@ -25,7 +27,7 @@
 <body>
   <!-- Navigation bar -->
   <div class="navbar">
-    <a href="#home-id" class="sliding-link">Home</a>
+    <a href="#home-id" class="sliding-link"> Home</a>
     <a href="#contacts-id" class="right sliding-link">Contacts</a>
     <a href="#interests-id" class="right sliding-link">Interests</a>
     <a href="#skills-id" class="right sliding-link">Skills</a>
@@ -34,43 +36,80 @@
 
   <div id="home-id" class="home-css" style="height: 100%;">
     <h1>My name is Norman. And that's it for now.</h1>
-    <p>"On my business card, I am a corporate president. </br> In my mind, I am a game developer. But in my heart, I am a gamer." </br> -Satoru Iwata<p>
+    <p>"On my business card, I am a corporate president. </br> In my mind, I am a game developer. </br> But in my heart, I am a gamer." -Satoru Iwata<p>
+
+      <div class="btn contact-css" style="position: absolute; bottom:10px; left:10px;">
+        <a href="http://google.com" target="_blank"><i class="fa fa-mail-forward"></i> E-Mail</a>
+        <a href="https://www.linkedin.com/in/norman-deng-257a4a180/" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+        <a href="https://github.com/ndeng0" target="_blank"><i class="fa fa-github"></i> Github</a>
+      </div>
   </div>
 
-  <div id="about-id" class="row">
-    <div class="column c-left"></div>
-    <div class="about-css column middle">
+  <div id="about-id">
+    <div class="about-css">
       <h1>About</h1>
       <p>Currently an undergraduate student at Stony Brook University majoring in Information Systems.</p>
       <p>An aspiring game developer and designer, who one day hopes to release a game into the world.</p>
       <p>I do whatever and wherever my interests takes me.</p>
     </div>
-    <div class="column c-right"></div>
   </div>
 
-  <div id="skills-id" class="row">
-    <div class="c-left"></div>
-    <div class="middle skills-css">
+  <div id="skills-id" class="skills-css">
+    <div>
       <div>
-        <h1>Skills</h1>
-        <p>These are the things I can do.</p>
-        <div>
+        <h1 style="text-align: center;">Skills</h1>
+        <div style="position:relative; left: 200px;">
           <h2>Programming: These are the programming languages I have picked up over the years.</h2>
-            <canvas id="p-canvas" width="700" height="400"> </canvas>
+
+          <h3>Java<button id="java-js" class="btn">Show More</button></h3>
+          <div id="java-p">
+            <canvas id="java" width="800" height="20"> </canvas>
+            <p>Random Text</p>
+          </div>
+
+          <h3>Python<button id="python-js" class="btn">Show More</button></h3>
+          <div id="python-p">
+            <canvas id="python" width="800" height="20"> </canvas>
+            <p>Random Text</p>
+          </div>
+
+          <h3>Javascript<button id="js-js" class="btn">Show More</button></h3>
+          <div id="js-p">
+            <canvas id="javascript" width="800" height="20"> </canvas>
+            <p>Random Text</p>
+          </div>
+
+          <h3>HTML/CSS<button id="hc-js" class="btn">Show More</button></h3>
+          <div id="hc-p">
+            <canvas id="html/css" width="800" height="20"> </canvas>
+            <p>Random Text</p>
+          </div>
+
           <h2>Libraries: These are libraries I have worked with alongside the programming languages I know.</h2>
-            <canvas id="l-canvas" width="700" height="400"> </canvas>
+
+          <h3>Processing</h3>
+          <div>
+            <canvas id="processing" width="800" height="20"> </canvas>
+            <p>Random Text</p>
+          </div>
+
+          <h3>P5.js</h3>
+          <canvas id="p5.js" width="800" height="20"> </canvas>
+          <h3>NumPy</h3>
+          <canvas id="numpy" width="800" height="20"> </canvas>
+          <h3>JQuery</h3>
+          <canvas id="jquery" width="800" height="20"> </canvas>
           <h2>Game Engines: These are some of the game engines I have worked with.</h2>
-          <p>
-            <canvas id="g-canvas" width="700" height="400"> </canvas>
+          <h3>Ren'Py</h3>
+          <h3>Blender</h3>
+          <h3>GameMaker Studio</h3>
         </div>
       </div>
     </div>
-    <div class="c-right"></div>
   </div>
 
-  <div id="interests-id" class=" row">
-    <div class="c-left"></div>
-    <div class="middle interests-css">
+  <div id="interests-id" class="interests-css">
+    <div>
       <h1>Interests</h1>
       <p>These are the things I like to do.<p>
       <h2>Favorite Games</h2>
@@ -79,7 +118,6 @@
       <h2>Extracurriculars</h2>
       <p>I'm a member of the Stony Brook Game Developers.</p>
     </div>
-    <div class="c-right"></div>
   </div>
 
   <div id="contacts-id" class="contact-css">
@@ -90,8 +128,16 @@
   </div>
 
   <script>
-    _programming();
-    _library();
+    graph("java", 0, 0, "red", 2); <!-- Java -->
+    graph("python", 0, 0, "blue", 5); <!-- Python-->
+    graph("javascript", 0, 0, "green", 8); <!-- Javascript -->
+    graph("html/css", 0, 0, "yellow", 4); <!-- HTML/CSS -->
+
+    graph("processing", 0, 0, "red", 2); <!-- Processing -->
+    graph("p5.js", 0, 0, "blue", 5); <!-- P5.js -->
+    graph("numpy", 0, 0, "green", 8); <!-- NumPy -->
+    graph("jquery", 0, 0, "yellow", 4); <!-- JQuery -->
+
     _game();
   </script>
 
