@@ -50,24 +50,24 @@
 .home-css {
   padding-top: 40vh;
   text-align: center;
-  background: #EFEFEF;
-  color: #A9A9A9;
+  background: #FBE8A6;
+  color: #000000;
 }
 
 /* About me section */
 .about-css {
   padding: 100px;
   text-align: center;
-  background: #FF3B3F;
-  color: white;
+  background: #B4DFE5;
+  color: #000000;
 }
 
 /* Skills section */
 .skills-css {
   padding: 100px;
-  text-align: center;
-  background: #A9A9A9;
-  color: white;
+  text-align: left;
+  background: #D2FDFF;
+  color: #000000;
 }
 
 /* Interests section */
@@ -75,8 +75,8 @@
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  background: #FF3B3F;
-  color: white;
+  background: #B4DFE5;
+  color: #000000;
 }
 
 /* Contacts section */
@@ -84,13 +84,13 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background: #333;
-  color: white;
+  background: #303C6C;
+  color: black;
 }
 
 .contact-css a:link, .contact-css a:visited{
-  background-color: black;
-  color: white;
+  background-color: inherit;
+  color: black;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
@@ -107,36 +107,6 @@
   font-size: 20px;
   cursor: pointer;
   display: inline-block;
-}
-
-.programming {
-  background-color: orange;
-  color: white;
-}
-
-.programming:hover {
-  background-color: green;
-  color: white;
-}
-
-.library {
-  background-color: orange;
-  color: white;
-}
-
-.library:hover {
-  background-color: green;
-  color: white;
-}
-
-.game {
-  background-color: orange;
-  color: white;
-}
-
-.game:hover {
-  background-color: green;
-  color: white;
 }
 
 .column {
