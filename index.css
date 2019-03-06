@@ -36,20 +36,20 @@
 
 .side {
   flex: 30%;
-  background-color: inherit;
+  background-color: #F4976C;
   padding: 20px;
+  padding-top: 10vh;
 }
 
 .main {
   flex: 70%;
-  background-color: #C3C3C3;
+  background-color: inherit;
   color: black;
-  padding: 20px;
+  padding-top: 35vh;
 }
 
 /* Home section */
 .home-css {
-  padding-top: 40vh;
   text-align: center;
   background: #FBE8A6;
   color: #000000;
@@ -84,13 +84,13 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background: #303C6C;
-  color: black;
+  background: #333;
+  color: white;
 }
 
 .contact-css a:link, .contact-css a:visited{
   background-color: inherit;
-  color: black;
+  color: white;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
@@ -205,4 +205,8 @@ p {
 /* Splite Website */
 * {
   box-sizing: border-box;
+}
+
+img {
+  border-radius: 50%;
 }
