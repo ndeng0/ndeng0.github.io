@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99;
 }
 
 .navbar a, .navbar a:visited{
@@ -65,15 +66,14 @@
 /* Skills section */
 .skills-css {
   padding: 100px;
-  text-align: left;
+  text-align: center;
   background: #D2FDFF;
   color: #000000;
 }
 
 /* Interests section */
 .interests-css {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px;
   text-align: center;
   background: #B4DFE5;
   color: #000000;
@@ -128,6 +128,67 @@
   clear: both;
 }
 
+/* smaller box */
+.subbox {
+  background: #F4976C;
+  width: 30%;
+  padding: 10px;
+}
+
+/* collapsible tab */
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/* progress bar */
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
 /* Misc. */
 div {
   width: $(window).height();
@@ -144,8 +205,4 @@ p {
 /* Splite Website */
 * {
   box-sizing: border-box;
-}
-
-canvas {
-    border:0px solid white;
 }
