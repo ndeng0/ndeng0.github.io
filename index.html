@@ -22,6 +22,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="index.js"></script>
 
+
 </head>
 
 <body>
@@ -55,54 +56,103 @@
   </div>
 
   <div id="skills-id" class="skills-css">
-    <div>
       <div>
         <h1 style="text-align: center;">Skills</h1>
-        <div style="position:relative; left: 200px;">
-          <h2>Programming: These are the programming languages I have picked up over the years.</h2>
+        <div>
 
-          <h3>Java<button id="java-js" class="btn">Show More</button></h3>
-          <div id="java-p">
-            <canvas id="java" width="800" height="20"> </canvas>
-            <p>Random Text</p>
-          </div>
-
-          <h3>Python<button id="python-js" class="btn">Show More</button></h3>
-          <div id="python-p">
-            <canvas id="python" width="800" height="20"> </canvas>
-            <p>Random Text</p>
-          </div>
-
-          <h3>Javascript<button id="js-js" class="btn">Show More</button></h3>
-          <div id="js-p">
-            <canvas id="javascript" width="800" height="20"> </canvas>
-            <p>Random Text</p>
-          </div>
-
-          <h3>HTML/CSS<button id="hc-js" class="btn">Show More</button></h3>
-          <div id="hc-p">
-            <canvas id="html/css" width="800" height="20"> </canvas>
-            <p>Random Text</p>
-          </div>
-
-          <h2>Libraries: These are libraries I have worked with alongside the programming languages I know.</h2>
-
-          <h3>Processing</h3>
           <div>
-            <canvas id="processing" width="800" height="20"> </canvas>
-            <p>Random Text</p>
+          <h2>Programming Languages</h2>
+
+          <button class="collapsible">Java</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 70%"></div>
+            </div>
+            <p>description</p>
           </div>
 
-          <h3>P5.js</h3>
-          <canvas id="p5.js" width="800" height="20"> </canvas>
-          <h3>NumPy</h3>
-          <canvas id="numpy" width="800" height="20"> </canvas>
-          <h3>JQuery</h3>
-          <canvas id="jquery" width="800" height="20"> </canvas>
-          <h2>Game Engines: These are some of the game engines I have worked with.</h2>
-          <h3>Ren'Py</h3>
-          <h3>Blender</h3>
-          <h3>GameMaker Studio</h3>
+          <button class="collapsible">Python</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 50%"></div>
+            </div>
+            <p>description</p>
+          </div>
+
+          <button class="collapsible">Javascript</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 30%"></div>
+            </div>
+            <p>description</p>
+          </div>
+
+          <button class="collapsible">HTML/CSS</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 30%"></div>
+            </div>
+            <p>description</p>
+          </div>
+
+          <div>
+          <h2>Libraries</h2>
+
+          <button class="collapsible">Processing</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 60%"></div>
+            </div>
+            <p>description</p>
+          </div>
+
+          <button class="collapsible">P5.js</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 30%"></div>
+            </div>
+            <p>description</p>
+          </div>
+
+          <button class="collapsible">NumPy</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 10%"></div>
+            </div>
+            <p>description</p>
+          </div>
+
+          </div>
+
+          <div>
+          <h2>Programs</h2>
+
+          <button class="collapsible">Blender</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 70%">70%</div>
+            </div>
+            <p>description</p>
+          </div>
+
+          <button class="collapsible">Ren'Py</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 70%">70%</div>
+            </div>
+            <p>description</p>
+          </div>
+
+          <button class="collapsible">Others</button>
+          <div class="content">
+            <div id="myProgress">
+              <div id="myBar" style="width: 70%">70%</div>
+            </div>
+            <p>description</p>
+          </div>
+
+          </div>
+
         </div>
       </div>
     </div>
@@ -112,11 +162,24 @@
     <div>
       <h1>Interests</h1>
       <p>These are the things I like to do.<p>
-      <h2>Favorite Games</h2>
-      <p>Some of my favorite games include "Tom Clancy's Rainbow 6 Siege", "Terraria", "Sid Meier's Civilization V", and more.</p>
-      <h2>Free Time</h2>
-      <h2>Extracurriculars</h2>
-      <p>I'm a member of the Stony Brook Game Developers.</p>
+
+        <div>
+        <button class="collapsible">Favorite Game</button>
+        <div class="content">
+          <p>description</p>
+        </div>
+
+        <button class="collapsible">Hobbies</button>
+        <div class="content">
+          <p>description</p>
+        </div>
+
+        <button class="collapsible">Extracurriculars</button>
+        <div class="content">
+          <p>description</p>
+        </div>
+
+      </div>
     </div>
   </div>
 
@@ -128,17 +191,20 @@
   </div>
 
   <script>
-    graph("java", 0, 0, "red", 2); <!-- Java -->
-    graph("python", 0, 0, "blue", 5); <!-- Python-->
-    graph("javascript", 0, 0, "green", 8); <!-- Javascript -->
-    graph("html/css", 0, 0, "yellow", 4); <!-- HTML/CSS -->
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
 
-    graph("processing", 0, 0, "red", 2); <!-- Processing -->
-    graph("p5.js", 0, 0, "blue", 5); <!-- P5.js -->
-    graph("numpy", 0, 0, "green", 8); <!-- NumPy -->
-    graph("jquery", 0, 0, "yellow", 4); <!-- JQuery -->
-
-    _game();
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
   </script>
 
 </body>
