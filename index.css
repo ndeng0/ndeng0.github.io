@@ -2,7 +2,7 @@
 /*Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #17252A;
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,11 +12,11 @@
 .navbar a, .navbar a:visited{
   float: left;
   display: block;
-  color: white;
+  color: #FEFFFF;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  background-color: #333;
+  background-color: #17252A;
 }
 
 /* Right-align link */
@@ -61,32 +61,32 @@
 /* Home section */
 .home-css {
   text-align: center;
-  background: #FBE8A6;
-  color: #000000;
+  background: #3AAFA9;
+  color: #17252A;
 }
 
 /* About me section */
 .about-css {
   padding: 100px;
   text-align: center;
-  background: #B4DFE5;
-  color: #000000;
+  background: #DEF2F1;
+  color: #17252A;
 }
 
 /* Skills section */
 .skills-css {
   padding: 100px;
   text-align: center;
-  background: #D2FDFF;
-  color: #000000;
+  background: #FEFFFF;
+  color: #17252A;
 }
 
 /* Interests section */
 .interests-css {
   padding: 100px;
   text-align: center;
-  background: #B4DFE5;
-  color: #000000;
+  background: #DEF2F1;
+  color: #17252A;
 }
 
 /* Contacts section */
@@ -94,13 +94,13 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background: #333;
-  color: white;
+  background: #17252A;
+  color: #FEFFFF;
 }
 
 .contact-css a:link, .contact-css a:visited{
   background-color: inherit;
-  color: white;
+  color: #FEFFFF;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
