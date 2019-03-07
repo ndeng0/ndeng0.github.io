@@ -48,6 +48,16 @@
   padding-top: 35vh;
 }
 
+@media screen and (max-width: 600px) {
+  .side {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
+
 /* Home section */
 .home-css {
   text-align: center;
@@ -103,7 +113,6 @@
   background-color: inherit;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-right: 28px;
   font-size: 20px;
   cursor: pointer;
   display: inline-block;
@@ -187,6 +196,11 @@
   text-align: center;
   line-height: 30px;
   color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Misc. */
