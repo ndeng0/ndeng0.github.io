@@ -22,7 +22,7 @@ let hp_up;
 let heal_hp;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight-200);
+  createCanvas(windowWidth, windowHeight-400);
   noCursor();
 
   player = new Player(width/2, height/2);
