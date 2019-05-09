@@ -38,9 +38,9 @@ function setup() {
   instr_1 = createDiv("WASD to move");
   instr_2 = createDiv("Mouse to aim");
   instr_3 = createDiv("Space to shoot");
-  instr_1.style("font-size", "32px");
-  instr_2.style("font-size", "32px");
-  instr_3.style("font-size", "32px");
+  instr_1.style("font-size", "16px");
+  instr_2.style("font-size", "16px");
+  instr_3.style("font-size", "16px");
 }
 
 function draw() {
