@@ -15,6 +15,7 @@ let wave = 0;
 let instr_1;
 let instr_2;
 let instr_3;
+let shoot = false;
 
 // Button
 let attack_up;
@@ -37,7 +38,7 @@ function setup() {
 
   instr_1 = createDiv("WASD to move");
   instr_2 = createDiv("Mouse to aim");
-  instr_3 = createDiv("Space to shoot");
+  instr_3 = createDiv("Space or Left Mouse to shoot");
   instr_1.style("font-size", "16px");
   instr_2.style("font-size", "16px");
   instr_3.style("font-size", "16px");
@@ -126,7 +127,7 @@ function draw() {
     player.alive =false;
   }
 
-  if(mouseIsPressed && frameCount%10 == 0) {
+  if((shoot || mouseIsPressed) && frameCount%10 == 0) {
     bullet.push(new Bullet(player.x, player.y, player.dmg));
   }
 
@@ -143,7 +144,7 @@ function keyPressed() {
   }
 
   if(key == ' ') {
-    bullet.push(new Bullet(player.x, player.y, player.dmg));
+    shoot = true;
   } else if(key == 'k') {
     enemy = [];
   } else if(key == 'm') {
@@ -157,6 +158,10 @@ function keyReleased() {
     case 's': player.down = false; break;
     case 'a': player.left = false; break;
     case 'd': player.right = false; break;
+  }
+
+  if(key == ' ') {
+    shoot = false;
   }
 }
 
