@@ -126,6 +126,10 @@ function draw() {
     player.alive =false;
   }
 
+  if(mouseIsPressed && frameCount%10 == 0) {
+    bullet.push(new Bullet(player.x, player.y, player.dmg));
+  }
+
   drawCursor();
   }
 }
